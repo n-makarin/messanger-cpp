@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88DB105E245760A000A8A0D2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88DB105D245760A000A8A0D2 /* main.cpp */; };
+		88DB106C24576D5900A8A0D2 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88DB106A24576D5900A8A0D2 /* server.cpp */; };
+		88DB106F2457783B00A8A0D2 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88DB106D2457783B00A8A0D2 /* client.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		880E8FD72459E68200279B01 /* chat_message.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = chat_message.hpp; sourceTree = "<group>"; };
+		880E8FD92459EB1200279B01 /* run.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
 		88DB105A245760A000A8A0D2 /* messanger-cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "messanger-cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DB105D245760A000A8A0D2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		88DB106A24576D5900A8A0D2 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		88DB106B24576D5900A8A0D2 /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
+		88DB106D2457783B00A8A0D2 /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
+		88DB106E2457783B00A8A0D2 /* client.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = client.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,12 @@
 		88DB105C245760A000A8A0D2 /* messanger-cpp */ = {
 			isa = PBXGroup;
 			children = (
+				88DB106B24576D5900A8A0D2 /* server.hpp */,
+				88DB106A24576D5900A8A0D2 /* server.cpp */,
+				880E8FD72459E68200279B01 /* chat_message.hpp */,
+				88DB106D2457783B00A8A0D2 /* client.cpp */,
+				880E8FD92459EB1200279B01 /* run.sh */,
+				88DB106E2457783B00A8A0D2 /* client.hpp */,
 				88DB105D245760A000A8A0D2 /* main.cpp */,
 			);
 			path = "messanger-cpp";
@@ -119,7 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DB106C24576D5900A8A0D2 /* server.cpp in Sources */,
 				88DB105E245760A000A8A0D2 /* main.cpp in Sources */,
+				88DB106F2457783B00A8A0D2 /* client.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
